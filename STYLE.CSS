@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('kartik.png');
+    background-repeat: repeat;
+    background-size: 320px;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    color: #2c3e50;
+  }
+  
+
+  .main-layout {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    max-width: 1100px;
+    flex-wrap: wrap;
+  }
+  
+ 
+  .task-container {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    min-width: 280px;
+  }
+  
+  .task-container h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #34495e;
+  }
+  
+  .task-container input[type="text"] {
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: all 0.2s ease;
+  }
+  
+  .task-container input[type="text"]:focus {
+    outline: none;
+    border-color: #2980b9;
+    box-shadow: 0 0 4px #3498db88;
+  }
+  
+  .task-container button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .task-container button:hover {
+    background-color: #27ae60;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  
+  li {
+    background: #ecf0f1;
+    margin-bottom: 8px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  li:hover {
+    background: #dfe6e9;
+  }
+  
+  li button {
+    background-color: #e74c3c;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.2s ease;
+  }
+  
+  li button:hover {
+    background-color: #c0392b;
+  }
+  
+
+  .timer-container {
+    flex: 2;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 300px;
+  }
+  
+  .timer-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  #timer {
+    font-size: 64px;
+    margin: 20px 0;
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .buttons button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .buttons button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  .section {
+    margin-top: 25px;
+  }
+  
+  select {
+    padding: 8px 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: border 0.2s ease;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+
+  #slotCount {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #27ae60;
+    font-weight: 500;
+  }
+  
+
+  @media (max-width: 768px) {
+    .main-layout {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .timer-container, .task-container {
+      width: 100%;
+    }
+  }
+  
