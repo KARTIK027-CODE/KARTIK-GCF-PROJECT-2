@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-layout">
+
+    <div class="task-container">
+      <h2>📋 Tasks</h2>
+      <input type="text" id="taskInput" placeholder="Add your task..." />
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+    </div>
+
+ 
+    <div class="timer-container">
+      <h1> Your Pomodoro Dashboard</h1>
+
+      <div class="section">
+        <label>Select Time Slot:</label>
+        <select id="time-select">
+          <option value="25">25 Minutes</option>
+          <option value="50">50 Minutes</option>
+          <option value="75">75 Minutes</option>
+        </select>
+      </div>
+
+      <div id="timer">25:00</div>
+
+      <div class="buttons">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+      </div>
+
+      <div class="section">
+        <h3> Completed Pomodoro Slots: <span id="slotCount">0</span></h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
